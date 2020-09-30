@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 1px 4px;
+}
+#logo img{
+    margin: 5px 8px;
+    height: 51px;
+    border-radius: 50%;
+}
+ul{
+    display: flex;
+}
+.item{
+    list-style: none;
+
+
+}
+
+.item a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+a:hover{
+    color: aqua;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 200px;
+    height: 364px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("back.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 435px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .8;
+}
+#home h1{
+    color: white;
+}
+#home  p{
+    color: white;
+    font-size: 1.9rem;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+.head{
+    font-size: 2.8rem;
+    padding: 20px;
+    text-align: center;
+}
+.btn{
+    padding: 6px 12px;
+    border: 2px solid white;
+    background-color : burlywood;
+    color: white;
+    margin: 2px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.centre{
+    text-align: center;
+}
+.head2{
+    font-size: 1.8rem;
+    padding: 20px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url("contact.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .8;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contactbox input,#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contactbox form{
+    width: 40%;
+}
+#contactbox label{
+
+    font-size: 1.3rem;
+}
